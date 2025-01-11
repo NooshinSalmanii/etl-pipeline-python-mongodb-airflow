@@ -34,14 +34,18 @@ This project automates an ETL process to extract data from a CSV file, clean and
 
 
 2. Run MongoDB:
-Ensure MongoDB is running locally or configure the remote connection.
+Ensure MongoDB is running locally or configure the remote connection to create the database and collections:
+use amazon_db
+db.createCollection("product_price_collection")
+db.createCollection("product_details_collection")
+db.createCollection("sales_collection")
 
-3. Run airflow:
+4. Run airflow:
 airflow db init
 airflow webserver
 airflow scheduler
 
-4. Execute the pipeline:
+5. Execute the pipeline:
 Directly run the script:
 python3 etl_pipeline.py
 
