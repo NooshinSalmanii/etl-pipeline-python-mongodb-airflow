@@ -45,6 +45,8 @@ This project automates an ETL process to extract data from a CSV file, clean and
    
 - Ensure MongoDB is running locally or configure the remote connection to create the database and collections:
       
+      #mongosh --host 192.168.8.133
+  
       #use amazon_db
       
       #db.createCollection("product_price_collection")
