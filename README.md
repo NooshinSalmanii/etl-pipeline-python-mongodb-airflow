@@ -48,17 +48,17 @@ python3 etl_pipeline.py
 
 
 Pipeline Workflow
-    Step-by-Step Process:
-        1. Extract: 
-            - Load the data from a CSV file.
-        2. Transform:
-            - Remove unnecessary columns (e.g., Unnamed: 0).
-            - Add unique IDs for products and sales.
-            - Calculate the sales_price as 90% of the actual_price.
-            - Convert actual_price to float and clean text data.
-            - Convert Gregorian dates to Jalali format.
-        3. Load: 
-            Store the processed data into three MongoDB collections:
-                - product_price_collection
-                - product_details_collection
-                - sales_collection
+Step-by-Step Process:
+1. Extract: 
+- Load the data from a CSV file.
+2. Transform:
+- Remove unnecessary columns (e.g., Unnamed: 0).
+- Add unique IDs for products and sales.
+- Calculate the sales_price as 90% of the actual_price.
+- Convert actual_price to float and clean text data.
+- Convert Gregorian dates to Jalali format.
+3. Load: 
+Store the processed data into three MongoDB collections:
+- product_price_collection
+- product_details_collection
+- sales_collection
