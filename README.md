@@ -46,9 +46,13 @@ pip3 install jdatetime
 Ensure MongoDB is running locally or configure the remote connection to create the database and collections:
 
 use amazon_db
+
 db.createCollection("product_price_collection")
+
 db.createCollection("product_details_collection")
+
 db.createCollection("sales_collection")
+
 
 3. Run airflow:
 airflow db init
