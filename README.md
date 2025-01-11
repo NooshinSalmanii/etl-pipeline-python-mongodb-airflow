@@ -55,13 +55,19 @@ This project automates an ETL process to extract data from a CSV file, clean and
 
 
 3. Run airflow:
+   
 #airflow db init
+
 #airflow webserver
+
 #airflow scheduler
 
-4. Execute the pipeline:
-Directly run the script:
-#python3 etl_pipeline.py
+
+5. Execute the pipeline:
+   
+   Directly run the script:
+   
+   #python3 etl_pipeline.py
 
 
 
