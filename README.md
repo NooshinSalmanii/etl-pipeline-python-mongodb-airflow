@@ -74,6 +74,7 @@ This project automates an ETL process to extract data from a CSV file, clean and
 Pipeline Workflow:
 
    Step-by-Step Process:
+   
       1. Extract: 
          - Load the data from a CSV file.
       2. Transform:
