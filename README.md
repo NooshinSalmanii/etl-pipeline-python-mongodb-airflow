@@ -28,17 +28,11 @@ This project automates an ETL process to extract data from a CSV file, clean and
 
    
 conda create --name air_env python=3.9 -y
-
 conda activate air_env
-
 conda install pandas
-
 conda install pymongo openpyxl
-
 conda install -c conda-forge apache-airflow
-
 pip3 install jdatetime
-
 
 
 3. Run MongoDB:
