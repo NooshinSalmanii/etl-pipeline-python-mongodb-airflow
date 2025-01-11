@@ -93,7 +93,7 @@ def split_dataframes(df):
 # Function to save data to MongoDB
 def save_to_mongodb(df, collection_name):
     print(f"Saving DataFrame to MongoDB collection '{collection_name}'...")
-    client = MongoClient('mongodb://192.168.8.133:27017/')
+    client = MongoClient('mongodb://127.0.0.1:27017/')
     db = client.amazon_db
     collection = db[collection_name]
     collection.insert_many(df.to_dict('records'))
