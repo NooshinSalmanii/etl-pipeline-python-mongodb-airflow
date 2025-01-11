@@ -35,6 +35,7 @@ This project automates an ETL process to extract data from a CSV file, clean and
 
 2. Run MongoDB:
 Ensure MongoDB is running locally or configure the remote connection to create the database and collections:
+
 use amazon_db
 db.createCollection("product_price_collection")
 db.createCollection("product_details_collection")
